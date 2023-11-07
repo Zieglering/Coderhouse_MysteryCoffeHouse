@@ -89,27 +89,6 @@ body {
 
 
 /* ------------------------ Footer ----------------------- */
-/* .mysteryCH-footer {
-    display: flex;
-    justify-content: center;
-}
-
-.mysteryCH-footer div {
-    display: flex;
-    flex-direction: column;
-    background-color:  #d7c8b3;
-    justify-content: center;
-    padding: 1rem;
-}
-
-
-
-.mysteryCH-footer ul  {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    column-gap: 120px;
-} */
 
 .mysteryCH-footer {
     background-color:  #d7c8b3;
@@ -148,33 +127,50 @@ body {
     margin-top: 5rem;
 }
 
-.mysteryCH-cafes button {
+.MysteryCH-color-boton {
     background-color: #d79d65;
     color: #3f3637;
 }
 
-.mysteryCH-cafes button:hover {
+.MysteryCH-color-boton:hover {
     background-color: #d7c8b3;
     color: #3f3637;
 }
 
-.mysteryCH-cafes button:focus {
+.MysteryCH-color-boton:focus {
     background-color: #766b65;
     color: #3f3637;
 }
 
-.mysteryCH-cafes img {
-    margin-top: 5rem;
-}
 
-/* -------------------- PAGINA QUIENES SOMOS -------------------*/
+/* -------------------- PAGINA HISTORIA QUIENES SOMOS -------------------*/
+
+.MysteryCH-fundador {
+    text-align: center;
+    margin-top: 2rem;
+    border-bottom: 0.1rem solid #d79d65;
+}
+.MysteryCH-fundador img {
+    margin-bottom: 5rem;
+    
+}
 
 .MysteryCH-nosotros {
     text-align: center;
+    margin-top: 5rem;
 }
+
 
 .MysteryCH-texto-izquierda {
     text-align: left;
+}
+
+/* --------------------- GALERÍA --------------------------- */
+
+.MysteryCH-galeria-titulo {
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 
@@ -189,7 +185,33 @@ body {
 
 }
 
+.MysteryCH-contacto-titulo {
+    text-align: center;
+    padding-bottom: 2rem;
+}
 
+
+.mysteryCH-comentario-enviar {
+    background-color: #d79d65;
+    color: #3f3637;
+    margin-bottom: 4rem;
+}
+
+.mysteryCH-comentario-enviar:hover {
+    background-color: #d7c8b3;
+    color: #3f3637;
+}
+
+.mysteryCH-comentario-enviar:focus {
+    background-color: #766b65;
+    color: #3f3637;
+}
+
+.MysteryCH-mapa iframe {
+    width: 100%;
+
+    
+}
 
 /* ------------------------ Media Queryies ------------------------------  */
 
