@@ -127,6 +127,11 @@ body {
     margin-top: 5rem;
 }
 
+.MysteryCH-tarjetas {
+    width: 90%;
+    margin-left: 1rem;
+}
+
 .MysteryCH-color-boton {
     background-color: #d79d65;
     color: #3f3637;
@@ -173,6 +178,10 @@ body {
     margin-top: 2rem;
 }
 
+.MysteryCH-galeria img {
+    width: 90%;
+}
+
 
 /* --------------------- PÁGINA CONTACTO-------------------- */
 /* CONTACTO */
@@ -215,9 +224,25 @@ body {
 
 /* ------------------------ Media Queryies ------------------------------  */
 
+/* Mobile media query */
+@media only screen and (max-width: 480px) {
+    
+    /* Media query footer  */
+    .mysteryCH-footer div {
+        flex-direction: column;
+    }
+}
+
+/* Tablet media query */
+@media only screen and (min-width: 481px) and (max-width: 978px) {
+    
+    /* Media query footer  */
+    .mysteryCH-footer div {
+        flex-direction: row;
+    }
+}
+
 /* DESKTOP media query  */
-
-
 @media only screen and (min-width: 961px) {
     
     /* Media query footer  */
