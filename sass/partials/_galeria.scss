@@ -1,0 +1,30 @@
+/* --------------------- GALERÍA --------------------------- */
+
+.mysteryCH-galeria-titulo {
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin: 5rem;
+    h3 {
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+}
+.mysteryCH-galeria {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+    display:grid;
+    grid-template-areas: 
+    "img1   img2   img3"
+    "img4   img5   img6"
+    "img7   img8   img9"
+    "img10  .      .";
+
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 5px;
+    column-gap: 5px;
+    img {
+    width: 100%;
+    }
+}

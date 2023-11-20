@@ -1,0 +1,80 @@
+/* ---------- animaciones navbar ----------- */
+
+/* delay para que los elementos del navbar entren de a uno en secuencia */
+.mysteryCH-Animacion-Fadeup {
+    animation-name: fadeUP;
+    animation-duration: 0.5s;
+
+    :nth-child(1) {
+        animation-delay: 0s;
+    }
+    :nth-child(2) {
+        animation-delay: 0.1s;
+    }
+    :nth-child(3) {
+        animation-delay: 0.2s;
+    }
+    :nth-child(4) {
+        animation-delay: 0.3s;
+    }
+    :nth-child(5) {
+        animation-delay: 0.4s;
+    }
+}
+
+
+.mysteryCH-Animacion-FadeScale {
+    animation-name: fadeScale;
+    animation-duration: 0.5s;
+    :active {
+        scale: 0.9;
+    }
+}
+
+@keyframes fadeUP {
+    0%{
+        transform: translateY(0.75rem);
+        opacity: 0;
+        animation-timing-function: linear;
+
+    }
+
+    25%{
+        transform: translateY(0.25rem);
+        animation-timing-function: linear;
+
+    }
+    
+    100%{
+        transform: translateY(0rem);
+        opacity: 1;
+        animation-timing-function: ease-out;
+
+    }
+}
+
+@keyframes fadeScale {
+    0%{
+        transform: scale(1.1);
+        animation-timing-function: linear;
+
+    }
+    
+    100%{
+        transform: scale(1);
+        animation-timing-function: ease-out;
+
+    }
+}
+
+
+
+/*------------ animacion tazas cafe primavera verano invierno -----------*/
+.mysteryCH-Animacion-hoverEscala {
+    img {
+        transition: transform 1s;
+    }
+    img:hover {
+        transform: scale(1.1);
+    }
+}

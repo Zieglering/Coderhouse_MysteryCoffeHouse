@@ -1,0 +1,28 @@
+/* ----------------------- PÁGINA MENÚ -------------------  */
+
+.MysteryCH-titulo {
+    margin-top: 5rem;
+    border-bottom: solid 0.1rem $naranja-Apagado;
+    padding-bottom: 2rem;
+}
+
+.MysteryCH-tarjetas {
+    margin-top: 2rem;
+    width: 90%;
+    margin-left: 1rem;
+    
+    .MysteryCH-color-boton {
+        background-color: $naranja-Destacado;
+        color: $cafe-Oscuro;
+        :hover {
+            background-color: $naranja-Destacado;
+            color: $cafe-Oscuro;
+        }
+        :focus {
+            background-color: $naranja-Destacado;
+            color: $cafe-Oscuro;
+        }
+    }
+}
+
+

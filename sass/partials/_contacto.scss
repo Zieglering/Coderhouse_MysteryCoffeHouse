@@ -1,0 +1,33 @@
+/* --------------------- PÁGINA CONTACTO-------------------- */
+/* CONTACTO */
+
+.MysteryCH-contacto{
+    font-size: 1.3rem;
+    margin: 0.4rem 0;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    
+    .MysteryCH-contacto-titulo {
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+    
+    .mysteryCH-comentario-enviar {
+        background-color: $naranja-Destacado;
+        color: $cafe-Oscuro;
+        margin-bottom: 4rem;
+        :hover {
+            background-color: $crema-Medio;
+            color: $cafe-Oscuro;
+        }
+        :focus {
+            background-color: $cafe-Claro;
+            color: $cafe-Oscuro;
+        }
+    }
+
+}
+
+.MysteryCH-mapa iframe {
+    width: 100%;
+}

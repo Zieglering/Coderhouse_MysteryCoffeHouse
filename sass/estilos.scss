@@ -1,0 +1,128 @@
+// PARTIALS
+@import "partials/variables";
+@import "partials/contacto";
+@import "partials/error404";
+@import "partials/galeria";
+@import "partials/historia";
+@import "partials/menu";
+@import "partials/animaciones";
+
+/* CSS */
+html{
+    background-color: $crema-Claro;
+    font-size: 100%;
+    color: $cafe-Negro;
+    font-family: $font;
+    
+}
+
+/* Body */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $crema-Claro;
+    header {
+        /* ------------------------- Nav bar --------------------------- */
+        /* Fondo del navbar */
+        .mysteryCH-NavColor {
+            background-color: $cafe-Negro;
+            border-bottom: 0.1rem solid $naranja-Destacado;
+            /* Color de la letra del navbar */
+            a {
+                color: $naranja-Destacado;
+            }
+            /* navbar distancia entre textos (gap) */
+            .mysteryCH-navgap {
+                display: flex;
+                column-gap: 100px;
+            }
+        }
+        /* Color destacado navbar activo */
+        .mysteryCH-destacado .nav-pills  {
+            .active {
+                background-color: $naranja-Destacado; 
+                color: $cafe-Oscuro;
+            }
+            /* Color destacado navbar hover */
+            .nav-link:hover {
+                color: $crema-Claro; 
+            }
+            /* Color destacado navbar seleccionado */
+            .nav-link:focus {
+                color: $crema-Medio; 
+            }
+        }
+    }
+    main {
+        /* ------------------------ Portada o banner ----------------------- */
+        .fotoPortada {
+            img {
+                width: 100%;
+                height: auto;
+                background-color: $crema-Claro;
+            }
+        }
+        
+        /* ---------------Seccion 1: hay un cafe para todos ------------*/
+        .cafe-para-todos {
+            ul{
+                display: flex;
+                list-style: none;
+                justify-content: center;
+                column-gap: 120px;
+                flex-wrap: wrap;
+            }
+            h1 {
+                display: flex;
+                justify-content: center;
+                margin-top: 5rem;
+                color: #3f3637;
+                text-align: center;
+            }
+            h4 {
+                display: flex;
+                justify-content: center;
+                margin-top: 0px;
+                color: #3f3637;
+                font-size: 2rem;
+                text-align: center;
+            }
+            p {
+                display: flex;
+                justify-content: center;
+                color: #3f3637;
+                font-size: 1rem;
+                text-align: center;
+            }
+        }
+    }
+    /* ------------------------ Footer ----------------------- */
+    footer {
+        background-color:  $crema-Medio;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-bottom: 1rem;
+
+        /* logo footer */
+        .mysteryCH-footer {
+            display: flex;
+            align-items: center;
+            column-gap: 120px;
+            margin-top: 1rem;
+            flex-direction: row;
+
+            }
+            
+        /* redes footer */
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            column-gap: 120px;
+            }
+    
+    }    
+}
+
+@import "partials/mediaquerys";

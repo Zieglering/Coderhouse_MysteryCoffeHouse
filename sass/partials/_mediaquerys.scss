@@ -1,0 +1,50 @@
+/* ------------------------ Media Queryies ------------------------------  */
+
+/* Mobile media query */
+@media only screen and (max-width: 480px) {
+    
+    /* Media query footer  */
+    body{
+        footer {
+            .mysteryCH-footer {
+                flex-direction: column;
+            }
+        }
+    }    
+
+    .mysteryCH-galeria{
+        grid-template-areas: 
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5"
+        "img6"
+        "img7"
+        "img8"
+        "img9"
+        "img10";
+        grid-template-columns: 90%;
+        grid-template-rows: 1rem repeat(0, 10rem)
+    }
+}
+
+/* Tablet media query */
+@media only screen and (min-width: 481px) and (max-width: 978px) {
+    
+    .mysteryCH-galeria{
+    grid-template-areas: 
+    "img1   img2"  
+    "img3   img4"
+    "img5   img6"
+    "img7   img8"
+    "img9   img10";
+
+    grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* DESKTOP media query  */
+@media only screen and (min-width: 961px) {
+
+}

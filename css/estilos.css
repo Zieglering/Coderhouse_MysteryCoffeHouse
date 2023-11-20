@@ -1,0 +1,306 @@
+@charset "UTF-8";
+/* Paleta de colores */
+/* --------------------- PÁGINA CONTACTO-------------------- */
+/* CONTACTO */
+.MysteryCH-contacto {
+  font-size: 1.3rem;
+  margin: 0.4rem 0;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+.MysteryCH-contacto .MysteryCH-contacto-titulo {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.MysteryCH-contacto .mysteryCH-comentario-enviar {
+  background-color: #d79d65;
+  color: #3f3637;
+  margin-bottom: 4rem;
+}
+.MysteryCH-contacto .mysteryCH-comentario-enviar :hover {
+  background-color: #d7c8b3;
+  color: #3f3637;
+}
+.MysteryCH-contacto .mysteryCH-comentario-enviar :focus {
+  background-color: #766b65;
+  color: #3f3637;
+}
+
+.MysteryCH-mapa iframe {
+  width: 100%;
+}
+
+/* --------------------- GALERÍA --------------------------- */
+.mysteryCH-galeria-titulo {
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  margin: 5rem;
+}
+.mysteryCH-galeria-titulo h3 {
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+.mysteryCH-galeria {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-bottom: 5rem;
+  display: grid;
+  grid-template-areas: "img1   img2   img3" "img4   img5   img6" "img7   img8   img9" "img10  .      .";
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 5px;
+  column-gap: 5px;
+}
+.mysteryCH-galeria img {
+  width: 100%;
+}
+
+/* -------------------- PAGINA HISTORIA QUIENES SOMOS -------------------*/
+.MysteryCH-fundador {
+  text-align: center;
+  margin-top: 2rem;
+  border-bottom: 0.1rem solid #d79d65;
+}
+.MysteryCH-fundador p, .MysteryCH-fundador h1, .MysteryCH-fundador h2 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.MysteryCH-fundador .MysteryCH-integrantes {
+  margin-top: 5rem;
+  padding-top: 2rem;
+  border-top: 0.1rem solid #d79d65;
+  background-color: #d79d65;
+}
+.MysteryCH-fundador .MysteryCH-integrantes img {
+  margin-bottom: 1rem;
+}
+.MysteryCH-fundador .MysteryCH-integrantes .MysteryCH-texto-izquierda {
+  text-align: left;
+}
+
+.MysteryCH-nosotros {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+/* ----------------------- PÁGINA MENÚ -------------------  */
+.MysteryCH-titulo {
+  margin-top: 5rem;
+  border-bottom: solid 0.1rem #bb8149;
+  padding-bottom: 2rem;
+}
+
+.MysteryCH-tarjetas {
+  margin-top: 2rem;
+  width: 90%;
+  margin-left: 1rem;
+}
+.MysteryCH-tarjetas .MysteryCH-color-boton {
+  background-color: #d79d65;
+  color: #3f3637;
+}
+.MysteryCH-tarjetas .MysteryCH-color-boton :hover {
+  background-color: #d79d65;
+  color: #3f3637;
+}
+.MysteryCH-tarjetas .MysteryCH-color-boton :focus {
+  background-color: #d79d65;
+  color: #3f3637;
+}
+
+/* ---------- animaciones navbar ----------- */
+/* delay para que los elementos del navbar entren de a uno en secuencia */
+.mysteryCH-Animacion-Fadeup {
+  animation-name: fadeUP;
+  animation-duration: 0.5s;
+}
+.mysteryCH-Animacion-Fadeup :nth-child(1) {
+  animation-delay: 0s;
+}
+.mysteryCH-Animacion-Fadeup :nth-child(2) {
+  animation-delay: 0.1s;
+}
+.mysteryCH-Animacion-Fadeup :nth-child(3) {
+  animation-delay: 0.2s;
+}
+.mysteryCH-Animacion-Fadeup :nth-child(4) {
+  animation-delay: 0.3s;
+}
+.mysteryCH-Animacion-Fadeup :nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+.mysteryCH-Animacion-FadeScale {
+  animation-name: fadeScale;
+  animation-duration: 0.5s;
+}
+.mysteryCH-Animacion-FadeScale :active {
+  scale: 0.9;
+}
+
+@keyframes fadeUP {
+  0% {
+    transform: translateY(0.75rem);
+    opacity: 0;
+    animation-timing-function: linear;
+  }
+  25% {
+    transform: translateY(0.25rem);
+    animation-timing-function: linear;
+  }
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes fadeScale {
+  0% {
+    transform: scale(1.1);
+    animation-timing-function: linear;
+  }
+  100% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+}
+/*------------ animacion tazas cafe primavera verano invierno -----------*/
+.mysteryCH-Animacion-hoverEscala img {
+  transition: transform 1s;
+}
+.mysteryCH-Animacion-hoverEscala img:hover {
+  transform: scale(1.1);
+}
+
+/* CSS */
+html {
+  background-color: #fff7ef;
+  font-size: 100%;
+  color: #140e0e;
+  font-family: "Lato", sans-serif;
+}
+
+/* Body */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff7ef;
+  /* ------------------------ Footer ----------------------- */
+}
+body header {
+  /* ------------------------- Nav bar --------------------------- */
+  /* Fondo del navbar */
+  /* Color destacado navbar activo */
+}
+body header .mysteryCH-NavColor {
+  background-color: #140e0e;
+  border-bottom: 0.1rem solid #d79d65;
+  /* Color de la letra del navbar */
+  /* navbar distancia entre textos (gap) */
+}
+body header .mysteryCH-NavColor a {
+  color: #d79d65;
+}
+body header .mysteryCH-NavColor .mysteryCH-navgap {
+  display: flex;
+  column-gap: 100px;
+}
+body header .mysteryCH-destacado .nav-pills {
+  /* Color destacado navbar hover */
+  /* Color destacado navbar seleccionado */
+}
+body header .mysteryCH-destacado .nav-pills .active {
+  background-color: #d79d65;
+  color: #3f3637;
+}
+body header .mysteryCH-destacado .nav-pills .nav-link:hover {
+  color: #fff7ef;
+}
+body header .mysteryCH-destacado .nav-pills .nav-link:focus {
+  color: #d7c8b3;
+}
+body main {
+  /* ------------------------ Portada o banner ----------------------- */
+  /* ---------------Seccion 1: hay un cafe para todos ------------*/
+}
+body main .fotoPortada img {
+  width: 100%;
+  height: auto;
+  background-color: #fff7ef;
+}
+body main .cafe-para-todos ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  column-gap: 120px;
+  flex-wrap: wrap;
+}
+body main .cafe-para-todos h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  color: #3f3637;
+  text-align: center;
+}
+body main .cafe-para-todos h4 {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+  color: #3f3637;
+  font-size: 2rem;
+  text-align: center;
+}
+body main .cafe-para-todos p {
+  display: flex;
+  justify-content: center;
+  color: #3f3637;
+  font-size: 1rem;
+  text-align: center;
+}
+body footer {
+  background-color: #d7c8b3;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 1rem;
+  /* logo footer */
+  /* redes footer */
+}
+body footer .mysteryCH-footer {
+  display: flex;
+  align-items: center;
+  column-gap: 120px;
+  margin-top: 1rem;
+  flex-direction: row;
+}
+body footer ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  column-gap: 120px;
+}
+
+/* ------------------------ Media Queryies ------------------------------  */
+/* Mobile media query */
+@media only screen and (max-width: 480px) {
+  /* Media query footer  */
+  body footer .mysteryCH-footer {
+    flex-direction: column;
+  }
+  .mysteryCH-galeria {
+    grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6" "img7" "img8" "img9" "img10";
+    grid-template-columns: 90%;
+    grid-template-rows: 1rem repeat(0, 10rem);
+  }
+}
+/* Tablet media query */
+@media only screen and (min-width: 481px) and (max-width: 978px) {
+  .mysteryCH-galeria {
+    grid-template-areas: "img1   img2" "img3   img4" "img5   img6" "img7   img8" "img9   img10";
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* DESKTOP media query  */
+
+/*# sourceMappingURL=estilos.css.map */
