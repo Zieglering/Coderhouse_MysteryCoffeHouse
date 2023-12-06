@@ -1,179 +1,6 @@
 @charset "UTF-8";
-/* Paleta de colores */
-/* --------------------- PÁGINA CONTACTO-------------------- */
-/* CONTACTO */
-.MysteryCH-contacto {
-  font-size: 1.3rem;
-  margin: 0.4rem 0;
-  margin-left: 5rem;
-  margin-right: 5rem;
-}
-.MysteryCH-contacto .MysteryCH-contacto-titulo {
-  text-align: center;
-  padding-bottom: 2rem;
-}
-.MysteryCH-contacto .mysteryCH-comentario-enviar {
-  background-color: #d79d65;
-  color: #3f3637;
-  margin-bottom: 4rem;
-}
-.MysteryCH-contacto .mysteryCH-comentario-enviar :hover {
-  background-color: #d7c8b3;
-  color: #3f3637;
-}
-.MysteryCH-contacto .mysteryCH-comentario-enviar :focus {
-  background-color: #766b65;
-  color: #3f3637;
-}
-
-.MysteryCH-mapa iframe {
-  width: 100%;
-}
-
-/* --------------------- GALERÍA --------------------------- */
-.mysteryCH-galeria-titulo {
-  text-align: center;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-  margin: 5rem;
-}
-.mysteryCH-galeria-titulo h3 {
-  font-size: 1rem;
-  margin-top: 2rem;
-}
-
-.mysteryCH-galeria {
-  margin-left: 5rem;
-  margin-right: 5rem;
-  margin-bottom: 5rem;
-  display: grid;
-  grid-template-areas: "img1   img2   img3" "img4   img5   img6" "img7   img8   img9" "img10  .      .";
-  grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 5px;
-  column-gap: 5px;
-}
-.mysteryCH-galeria img {
-  width: 100%;
-}
-
-/* -------------------- PAGINA HISTORIA QUIENES SOMOS -------------------*/
-.MysteryCH-fundador {
-  text-align: center;
-  margin-top: 2rem;
-  border-bottom: 0.1rem solid #d79d65;
-}
-.MysteryCH-fundador p, .MysteryCH-fundador h1, .MysteryCH-fundador h2 {
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-.MysteryCH-fundador .MysteryCH-integrantes {
-  margin-top: 5rem;
-  padding-top: 2rem;
-  border-top: 0.1rem solid #d79d65;
-  background-color: #d79d65;
-}
-.MysteryCH-fundador .MysteryCH-integrantes img {
-  margin-bottom: 1rem;
-}
-.MysteryCH-fundador .MysteryCH-integrantes .MysteryCH-texto-izquierda {
-  text-align: left;
-}
-
-.MysteryCH-nosotros {
-  text-align: center;
-  margin-top: 5rem;
-}
-
-/* ----------------------- PÁGINA MENÚ -------------------  */
-.MysteryCH-titulo {
-  margin-top: 5rem;
-  border-bottom: solid 0.1rem #bb8149;
-  padding-bottom: 2rem;
-}
-
-.MysteryCH-tarjetas {
-  margin-top: 2rem;
-  width: 90%;
-  margin-left: 1rem;
-}
-.MysteryCH-tarjetas .MysteryCH-color-boton {
-  background-color: #d79d65;
-  color: #3f3637;
-}
-.MysteryCH-tarjetas .MysteryCH-color-boton :hover {
-  background-color: #d79d65;
-  color: #3f3637;
-}
-.MysteryCH-tarjetas .MysteryCH-color-boton :focus {
-  background-color: #d79d65;
-  color: #3f3637;
-}
-
-/* ---------- animaciones navbar ----------- */
-/* delay para que los elementos del navbar entren de a uno en secuencia */
-.mysteryCH-Animacion-Fadeup {
-  animation-name: fadeUP;
-  animation-duration: 0.5s;
-}
-.mysteryCH-Animacion-Fadeup :nth-child(1) {
-  animation-delay: 0s;
-}
-.mysteryCH-Animacion-Fadeup :nth-child(2) {
-  animation-delay: 0.1s;
-}
-.mysteryCH-Animacion-Fadeup :nth-child(3) {
-  animation-delay: 0.2s;
-}
-.mysteryCH-Animacion-Fadeup :nth-child(4) {
-  animation-delay: 0.3s;
-}
-.mysteryCH-Animacion-Fadeup :nth-child(5) {
-  animation-delay: 0.4s;
-}
-
-.mysteryCH-Animacion-FadeScale {
-  animation-name: fadeScale;
-  animation-duration: 0.5s;
-}
-.mysteryCH-Animacion-FadeScale :active {
-  scale: 0.9;
-}
-
-@keyframes fadeUP {
-  0% {
-    transform: translateY(0.75rem);
-    opacity: 0;
-    animation-timing-function: linear;
-  }
-  25% {
-    transform: translateY(0.25rem);
-    animation-timing-function: linear;
-  }
-  100% {
-    transform: translateY(0rem);
-    opacity: 1;
-    animation-timing-function: ease-out;
-  }
-}
-@keyframes fadeScale {
-  0% {
-    transform: scale(1.1);
-    animation-timing-function: linear;
-  }
-  100% {
-    transform: scale(1);
-    animation-timing-function: ease-out;
-  }
-}
-/*------------ animacion tazas cafe primavera verano invierno -----------*/
-.mysteryCH-Animacion-hoverEscala img {
-  transition: transform 1s;
-}
-.mysteryCH-Animacion-hoverEscala img:hover {
-  transform: scale(1.1);
-}
-
-/* CSS */
+/* PARTIALS de las variables */
+/* ------------------- index y general ----------------- */
 html {
   background-color: #fff7ef;
   font-size: 100%;
@@ -243,7 +70,7 @@ body main .cafe-para-todos h1 {
   color: #3f3637;
   text-align: center;
 }
-body main .cafe-para-todos h4 {
+body main .cafe-para-todos h2 {
   display: flex;
   justify-content: center;
   margin-top: 0px;
@@ -281,6 +108,182 @@ body footer ul {
   column-gap: 120px;
 }
 
+/* PARTIALS de las animaciones */
+/* ---------- animaciones navbar ----------- */
+/* delay para que los elementos del navbar entren de a uno en secuencia */
+.mysteryCH-Animacion-Fadeup {
+  animation-name: fadeUP;
+  animation-duration: 0.5s;
+}
+.mysteryCH-Animacion-Fadeup :nth-child(1) {
+  animation-delay: 0s;
+}
+.mysteryCH-Animacion-Fadeup :nth-child(2) {
+  animation-delay: 0.1s;
+}
+.mysteryCH-Animacion-Fadeup :nth-child(3) {
+  animation-delay: 0.2s;
+}
+.mysteryCH-Animacion-Fadeup :nth-child(4) {
+  animation-delay: 0.3s;
+}
+.mysteryCH-Animacion-Fadeup :nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+.mysteryCH-Animacion-FadeScale {
+  animation-name: fadeScale;
+  animation-duration: 0.5s;
+}
+.mysteryCH-Animacion-FadeScale :active {
+  scale: 0.9;
+}
+
+@keyframes fadeUP {
+  0% {
+    transform: translateY(0.75rem);
+    opacity: 0;
+    animation-timing-function: linear;
+  }
+  25% {
+    transform: translateY(0.25rem);
+    animation-timing-function: linear;
+  }
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes fadeScale {
+  0% {
+    transform: scale(1.1);
+    animation-timing-function: linear;
+  }
+  100% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+}
+/*------------ animacion tazas cafe primavera verano invierno -----------*/
+.mysteryCH-Animacion-hoverEscala img {
+  transition: transform 1s;
+}
+.mysteryCH-Animacion-hoverEscala img:hover {
+  transform: scale(1.1);
+}
+
+/* PARTIALS de las páginas */
+/* ----------------------- PÁGINA MENÚ -------------------  */
+.mysteryCH-titulo {
+  margin-top: 5rem;
+  border-bottom: solid 0.1rem #bb8149;
+  padding-bottom: 2rem;
+}
+
+.mysteryCH-tarjetas {
+  margin-top: 2rem;
+  width: 90%;
+  margin-left: 1rem;
+}
+.mysteryCH-tarjetas .mysteryCH-color-boton {
+  background-color: #d79d65;
+  color: #3f3637;
+}
+.mysteryCH-tarjetas .mysteryCH-color-boton :hover {
+  background-color: #d79d65;
+  color: #3f3637;
+}
+.mysteryCH-tarjetas .mysteryCH-color-boton :focus {
+  background-color: #d79d65;
+  color: #3f3637;
+}
+
+/* --------------------- GALERÍA --------------------------- */
+.mysteryCH-galeria-titulo {
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  margin: 5rem;
+}
+.mysteryCH-galeria-titulo h2 {
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+.mysteryCH-galeria {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-bottom: 5rem;
+  display: grid;
+  grid-template-areas: "img1   img2   img3" "img4   img5   img6" "img7   img8   img9" "img10  .      .";
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 5px;
+  column-gap: 5px;
+}
+.mysteryCH-galeria img {
+  width: 100%;
+}
+
+/* -------------------- PAGINA HISTORIA QUIENES SOMOS -------------------*/
+.mysteryCH-fundador {
+  text-align: center;
+  margin-top: 2rem;
+  border-bottom: 0.1rem solid #d79d65;
+}
+.mysteryCH-fundador p, .mysteryCH-fundador h1, .mysteryCH-fundador h2 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.mysteryCH-fundador .mysteryCH-integrantes {
+  margin-top: 5rem;
+  padding-top: 2rem;
+  border-top: 0.1rem solid #d79d65;
+  background-color: #d79d65;
+}
+.mysteryCH-fundador .mysteryCH-integrantes img {
+  margin-bottom: 1rem;
+}
+.mysteryCH-fundador .mysteryCH-integrantes .mysteryCH-texto-izquierda {
+  text-align: left;
+}
+
+.mysteryCH-nosotros {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+/* --------------------- PÁGINA CONTACTO-------------------- */
+/* CONTACTO */
+.mysteryCH-contacto {
+  font-size: 1.3rem;
+  margin: 0.4rem 0;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+.mysteryCH-contacto .mysteryCH-contacto-titulo {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.mysteryCH-contacto .mysteryCH-comentario-enviar {
+  background-color: #d79d65;
+  color: #3f3637;
+  margin-bottom: 4rem;
+}
+.mysteryCH-contacto .mysteryCH-comentario-enviar :hover {
+  background-color: #d7c8b3;
+  color: #3f3637;
+}
+.mysteryCH-contacto .mysteryCH-comentario-enviar :focus {
+  background-color: #766b65;
+  color: #3f3637;
+}
+
+.mysteryCH-mapa iframe {
+  width: 100%;
+}
+
+/* PARTIALS media querys  */
 /* ------------------------ Media Queryies ------------------------------  */
 /* Mobile media query */
 @media only screen and (max-width: 480px) {

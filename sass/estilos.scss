@@ -1,13 +1,8 @@
-// PARTIALS
+/* PARTIALS de las variables */
 @import "partials/variables";
-@import "partials/contacto";
-@import "partials/error404";
-@import "partials/galeria";
-@import "partials/historia";
-@import "partials/menu";
-@import "partials/animaciones";
 
-/* CSS */
+
+/* ------------------- index y general ----------------- */
 html{
     background-color: $crema-Claro;
     font-size: 100%;
@@ -79,7 +74,7 @@ body {
                 color: #3f3637;
                 text-align: center;
             }
-            h4 {
+            h2 {
                 display: flex;
                 justify-content: center;
                 margin-top: 0px;
@@ -125,4 +120,15 @@ body {
     }    
 }
 
+/* PARTIALS de las animaciones */
+@import "partials/animaciones";
+
+/* PARTIALS de las páginas */
+@import "partials/menu";
+@import "partials/galeria";
+@import "partials/historia";
+@import "partials/contacto";
+@import "partials/error404";
+
+/* PARTIALS media querys  */
 @import "partials/mediaquerys";
